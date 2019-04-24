@@ -194,5 +194,5 @@ def image_carousel_message1():
 #關於LINEBOT聊天內容範例
 
 def unknow():
-    message = TemplateSendMessage(text:"我聽不懂ㄝ")
+    message = TemplateSendMessage(text="我聽不懂ㄝ")
     return message
