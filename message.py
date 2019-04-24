@@ -103,7 +103,7 @@ def Confirm_Template():
 
 #Toreba旋轉木馬按鈕訊息介面
 
-def Toreba_Carousel_Template():
+def Carousel_Template():
     message = TemplateSendMessage(
         alt_text='Toreba',
         template=CarouselTemplate(
