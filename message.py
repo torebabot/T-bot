@@ -161,7 +161,7 @@ def Carousel_Template():
                         ),
                         URITemplateAction(
                             label='uri2',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png'
+                            uri='https://www.toreba.net/replay'
                         )
                     ]
                 )
