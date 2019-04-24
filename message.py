@@ -139,7 +139,12 @@ def Carousel_Template():
                         URITemplateAction(
                             label='景品取得影片',
                             uri='https://www.toreba.net/replay'
+                        ),
+                        URITemplateAction(
+                            label='景品取得影片',
+                            uri='https://www.toreba.net/replay'
                         )
+                        
                     ]
                 )
             ]
