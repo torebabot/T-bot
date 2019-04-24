@@ -128,6 +128,7 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
+                    thumbnail_image_url='',
                     gititle='這是第二塊模板',
                     text='副標題可以自己改',
                     actions=[
