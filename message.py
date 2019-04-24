@@ -101,47 +101,43 @@ def Confirm_Template():
     )
     return message
 
-#旋轉木馬按鈕訊息介面
+#Toreba旋轉木馬按鈕訊息介面
 
-def Carousel_Template():
+def Toreba_Carousel_Template():
     message = TemplateSendMessage(
-        alt_text='一則旋轉木馬按鈕訊息',
+        alt_text='Toreba',
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
                     thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='這是第三個模塊',
-                    text='最多可以放十個',
+                    title='主要功能',
+                    text='請選擇功能',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=3'
+                        URITemplateAction(
+                            label='登入帳號',
+                            uri='https://www.toreba.net/account/login'
                         ),
                         URITemplateAction(
-                            label='uri2',
-                            uri='https://www.toreba.net/replay'
+                            label='TP儲值',
+                            uri='https://www.toreba.net/purchase/home'
                         ),
                         URITemplateAction(
-                            label='uri2',
-                            uri='https://www.toreba.net/replay'
+                            label='商品寄出',
+                            uri='http://www.toreba.net/mypage/order_global'
                         )
                     ]
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='這是第三個模塊',
-                    text='最多可以放十個',
+                    title='附加功能',
+                    text='請選擇功能',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=3'
+                        URITemplateAction(
+                            label='瀏覽商品',
+                            uri='https://www.toreba.net/'
                         ),
                         URITemplateAction(
-                            label='uri2',
-                            uri='https://www.toreba.net/replay'
-                        ),
-                        URITemplateAction(
-                            label='uri2',
+                            label='景品取得影片',
                             uri='https://www.toreba.net/replay'
                         )
                     ]
