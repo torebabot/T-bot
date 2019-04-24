@@ -18,9 +18,9 @@ from Function import *
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('Z74FxcvQYVMkxFkFFtR/KKNm0mQvqFSgtk8z1Bs49qpl+Co1sV3JRNF8CKwLv7hyFy79CWitw1bTBk78ryEy3K0WGVqQdYETpJG9xYgNu5M4hBS57UcaNTT5FUhl7er+tJaZrbXwa4ldTAzboT9igwdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('PbW8YhaRhfmp0Nd5elBwx+zG3IZnZuImyiLaw/UZFTyELkFV94ErauAYO/Nb8ydURk+ERC4zJBfEXSMcs2HKRz4uG4soAO6Ll3aXpsKgYufBIMJ2WXTHS+KHSreMMZEtgBbd3o165/FVkxYclxrJpwdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('9ace6557457e7d8a3f6e6389f27ffb5b')
+handler = WebhookHandler('39c91c5d891df00796befd95d2e012e6')
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -44,18 +44,9 @@ def handle_message(event):
     if '抓樂霸' in msg:
         message = Toreba_Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '最新活動訊息' in msg:
-        message = buttons_message()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '註冊會員' in msg:
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '圖片畫廊' in msg:
-        message = test()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '功能列表' in msg:
-        message = function_list()
-        line_bot_api.reply_message(event.reply_token, message)
+    elif 'test' in msg:
+        message = imagemap_message()
+        line_bot_api.reply_message(event.reply_token,message)
     else:
         pass
 

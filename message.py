@@ -105,7 +105,7 @@ def Confirm_Template():
 
 def Toreba_Carousel_Template():
     message = TemplateSendMessage(
-        alt_text='Toreba',
+        alt_text='來自Toreba訊息',
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
