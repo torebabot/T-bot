@@ -109,25 +109,6 @@ def Carousel_Template():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
-                    title='這是第一塊模板',
-                    text='一個模板可以有三個按鈕',
-                    actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='將這個訊息偷偷回傳給機器人'
-                        ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是1'
-                        ),
-                        URITemplateAction(
-                            label='進入1的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png'
-                        )
-                    ]
-                ),
-                CarouselColumn(
                     thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
                     title='這是第三個模塊',
                     text='最多可以放十個',
