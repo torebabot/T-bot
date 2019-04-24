@@ -103,7 +103,7 @@ def Confirm_Template():
 
 #Toreba旋轉木馬按鈕訊息介面
 
-def Carousel_Template():
+def Toreba_Carousel_Template():
     message = TemplateSendMessage(
         alt_text='Toreba',
         template=CarouselTemplate(
@@ -141,8 +141,8 @@ def Carousel_Template():
                             uri='https://www.toreba.net/replay'
                         ),
                         URITemplateAction(
-                            label='景品取得影片',
-                            uri='https://www.toreba.net/replay'
+                            label='機台查詢',
+                            uri='http://tools.torebaprizewatcher.com/pingpong.html'
                         )
                         
                     ]
