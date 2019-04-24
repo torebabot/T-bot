@@ -48,7 +48,8 @@ def handle_message(event):
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token,message)
     else:
-        pass
+        message = "我聽不懂你說甚麼"
+        line_bot_api.reply_message(event.reply_token,message)
 
 
 import os
