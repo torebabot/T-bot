@@ -48,7 +48,7 @@ def handle_message(event):
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token,message)
     else:
-        message = unknow()
+        message = TextMessage(test = "d")
         line_bot_api.reply_message(event.reply_token,message)
 
 
