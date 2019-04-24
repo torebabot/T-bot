@@ -147,7 +147,7 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png',
+                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
                     title='這是第三個模塊',
                     text='最多可以放十個',
                     actions=[
