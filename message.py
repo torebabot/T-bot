@@ -155,9 +155,9 @@ def Carousel_Template():
                             label='回傳一個訊息',
                             data='這是ID=3'
                         ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是3'
+                        URITemplateAction(
+                            label='uri2',
+                            uri='https://www.toreba.net/replay'
                         ),
                         URITemplateAction(
                             label='uri2',
