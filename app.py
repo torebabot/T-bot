@@ -44,9 +44,6 @@ def handle_message(event):
     if '抓樂霸' in msg:
         message = Toreba_Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
-    elif 'test' in msg:
-        message = imagemap_message()
-        line_bot_api.reply_message(event.reply_token,message)
     else:
         pass
 
