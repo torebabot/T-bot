@@ -129,38 +129,15 @@ def Carousel_Template():
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    gititle='這是第二塊模板',
-                    text='副標題可以自己改',
+                    title='附加功能',
+                    text='請選擇功能',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=2'
-                        ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是2'
+                        URITemplateAction(
+                            label='瀏覽商品',
+                            uri='https://www.toreba.net/'
                         ),
                         URITemplateAction(
-                            label='進入2的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Number_2_in_light_blue_rounded_square.svg/200px-Number_2_in_light_blue_rounded_square.svg.png'
-                        )
-                    ]
-                ),
-                CarouselColumn(
-                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='這是第三個模塊',
-                    text='最多可以放十個',
-                    actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=3'
-                        ),
-                        URITemplateAction(
-                            label='uri2',
-                            uri='https://www.toreba.net/replay'
-                        ),
-                        URITemplateAction(
-                            label='uri2',
+                            label='景品取得影片',
                             uri='https://www.toreba.net/replay'
                         )
                     ]
@@ -211,48 +188,3 @@ def image_carousel_message1():
 
 #關於LINEBOT聊天內容範例
 
-#Toreba旋轉木馬按鈕訊息介面
-
-def Toreba_Carousel_Template():
-    message = TemplateSendMessage(
-        alt_text='Toreba旋轉木馬按鈕訊息',
-        template=CarouselTemplate(
-            columns=[
-                CarouselColumn(
-                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='主要功能',
-                    text='請選擇功能',
-                    actions=[
-                        URITemplateAction(
-                            label='登入帳號',
-                            uri='https://www.toreba.net/account/login'
-                        ),
-                        URITemplateAction(
-                            label='TP儲值',
-                            uri='https://www.toreba.net/purchase/home'
-                        ),
-                        URITemplateAction(
-                            label='商品寄出',
-                            uri='http://www.toreba.net/mypage/order_global'
-                        )
-                    ]
-                ),
-                CarouselColumn(
-                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='附加功能',
-                    text='請選擇功能',
-                    actions=[
-                        URITemplateAction(
-                            label='瀏覽商品',
-                            uri='https://www.toreba.net/'
-                        ),
-                        URITemplateAction(
-                            label='景品取得影片',
-                            uri='https://www.toreba.net/replay'
-                        )
-                    ]
-                )
-            ]
-        )
-    )
-    return message
