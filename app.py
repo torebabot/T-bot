@@ -59,6 +59,9 @@ def handle_message(event):
     elif '功能列表' in msg:
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
+    elif '抓樂霸' in msg
+        message = Toreba_Carousel_Template()
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         pass
 
