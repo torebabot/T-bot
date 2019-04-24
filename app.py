@@ -51,16 +51,13 @@ def handle_message(event):
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif '旋轉木馬' in msg:
-        message = Toreba_Carousel_Template()
+        message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif '圖片畫廊' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
     elif '功能列表' in msg:
         message = function_list()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '抓樂霸' in msg
-        message = Toreba_Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
     else:
         pass
