@@ -129,15 +129,38 @@ def Carousel_Template():
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
-                    title='附加功能',
-                    text='請選擇功能',
+                    title='這是第三個模塊',
+                    text='最多可以放十個',
                     actions=[
-                        URITemplateAction(
-                            label='瀏覽商品',
-                            uri='https://www.toreba.net/'
+                        PostbackTemplateAction(
+                            label='回傳一個訊息',
+                            data='這是ID=3'
                         ),
                         URITemplateAction(
-                            label='景品取得影片',
+                            label='uri2',
+                            uri='https://www.toreba.net/replay'
+                        ),
+                        URITemplateAction(
+                            label='uri2',
+                            uri='https://www.toreba.net/replay'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/71jMsmcpkYL.png',
+                    title='這是第三個模塊',
+                    text='最多可以放十個',
+                    actions=[
+                        PostbackTemplateAction(
+                            label='回傳一個訊息',
+                            data='這是ID=3'
+                        ),
+                        URITemplateAction(
+                            label='uri2',
+                            uri='https://www.toreba.net/replay'
+                        ),
+                        URITemplateAction(
+                            label='uri2',
                             uri='https://www.toreba.net/replay'
                         )
                     ]
